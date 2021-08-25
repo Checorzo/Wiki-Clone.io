@@ -160,24 +160,37 @@ main .input {
  }
 
  main .input .input-box:focus-within{
-     border: 1px solid rgb(51, 102, 204);
-     box-shadow: inset 0 0 0 1px rgb(51, 102, 204);
+     border: 1px solid #365e91;
+     box-shadow: inset 0 0 0 1px #365e91;
  }
 
- main .input .input-box .box:focus > main .input  div{
-    border: 1px solid black;
+ main .input .input-box .box:focus > main .input  div:focus-within{
+    /* border: 1px solid black; */
     box-shadow: none;
 }
 
- main .input img {
+ main .input .search-icon {
      width: 39px;
-     height: 37px;
+     height: 35px;
      margin: 0;
-     background-color: rgb(68, 127, 245);
+     background-color: #365e91;
      float: right;
      position:relative;
  }
 
+ main .input .search-icon img {
+     margin: 10px;
+     width: 15px;
+     height: 15px;
+ }
+
  main .input img:hover {
      cursor: pointer;
+ }
+ 
+ .letter-v {
+     width: 5px;
+     height: 2px;
+     font-size: 10px;
+     font-family: monospace;
  }
