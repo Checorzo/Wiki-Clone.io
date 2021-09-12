@@ -2,7 +2,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 13px;
+    font-size: 14px;
 }
 header {
     width:350px;
@@ -11,78 +11,99 @@ header {
 
 header h1 {
     margin-top: 40px;
-    margin-left: 35%;
+    margin-left: 25%;
     margin-bottom: 0;
-    font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    font-family: 'Crimson text', serif;
     color: #000000;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-weight: 400;
+    /* letter-spacing: 0.5px; */
 }
 header h1 span {
-    font-size: 24px;
+    font-size: 37px;
 }
 
 header .subtitle {
     display: block;
-    margin-left: 35%;
-    margin-top: 5px;
-    font-size: 9px;
+    margin-left: 30%;
+    margin-top: 4px;
+    font-size: 11.2px;
     font: weight 600;
     color: #000000;
 }
 
 main {
     width: 400px;
-    height: 300px;
-    margin: 0 auto;
+    height: 70%;
+    margin: 0 auto 8%;
+    padding: 0 auto;
 }
 main .logo {
-    display: flex;
+    margin-top: 10px;
 }
-main img {
-    width: 125px;
-    height: 115px;
+main .logo .list{
+    display: block;
+    width: inherit;
+    height: 310px;
+    /* margin-bottom: 200px; */
+}
+main .logo .list img {
+    width: 195px;
+    height: 180px; 
     position: absolute;
-    margin-left: 14%;
-    margin-top: 45px;
+    /* margin: 8% 9%; */
+    left: 41%;
+    top: 38%;
+    display: block;
 }
 
-main ul {
-    margin-top: 20px;
-    font-size: 13px;
+main .logo .list {
+    position: static;
+    /* margin-bottom: 30px; */
+    display: flex;
+}
+
+main .logo .list ul {
+    width: 200px;
+    height: 250px;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     list-style: none;
+    padding-left: 10px;
 }
-main ul li {
+
+main .logo .list .list-left {
+    padding-left: 32px;
+}
+main .logo .list ul li {
     width: 120px;
     height: 35px;
-    margin-left: 50px;
-    margin-bottom: 15px;
+    /* margin-left: 50px; */
+    margin-bottom: 25px;
     letter-spacing: -0.25px;
 }
 
-main .list-left .list-left__1, main .list-left .list-left__5  {
-    margin-left: -5px;
-}
+ main .list-left .list-left__1, main .list-left .list-left__5  {
+    margin-left: -10px;
+} 
 main .list-left .list-left__2, main .list-left .list-left__4 {
-    margin-left: -50px;
-}
-
-main .list-left .list-left__3 {
     margin-left: -60px;
 }
 
+main .list-left .list-left__3 {
+    margin-left: -70px;
+}
+
 main .list-right .list-right__1, main .list-right .list-right__5  {
-    margin-left: 50px;
+    margin-left: 53px;
 }
 main .list-right .list-right__2, main .list-right .list-right__4 {
-    margin-left: 80px;
+    margin-left: 93px;
 }
 
 main .list-right .list-right__3 {
-    margin-left: 90px;
+    margin-left: 103px;
 }
 
 main ul li a {
@@ -90,10 +111,11 @@ main ul li a {
     text-decoration: none;
     text-align: center;
     color: rgb(51, 102, 204);
+    margin-bottom: 6px;
 }
 
 main ul li span {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 200;
     color: rgb(84, 89, 93);
     display: block;
@@ -113,9 +135,9 @@ main .list-left li:hover ~ a {
 }
 
 main .input {
-    width: 285px;
-    height: 35px;
-    margin: 0 auto;
+    width: 480px;
+    height: 37px;
+    margin-left: -29px;
     padding: 0;
     display: flex;
     /* justify-content: start; */
@@ -123,14 +145,14 @@ main .input {
  main .input div {
      width: 80%;
      height: 100%;
-     border: 1px solid rgb(84, 89, 93);
+     border: 1px solid #adb3ba;
      display: flex;
      justify-content: start;
      /* align-content: end; */
  }
 
  main .input .input-box .box {
-     width: 80%;
+     width: 85%;
      height: 80%;
      background: none;
      outline: none;
@@ -157,6 +179,7 @@ main .input {
 
  main .input div select:focus {
      border: 1px solid rgb(84, 89, 93);
+     display: nons;
  }
 
  main .input .input-box:focus-within{
@@ -164,14 +187,14 @@ main .input {
      box-shadow: inset 0 0 0 1px #365e91;
  }
 
- main .input .input-box .box:focus > main .input  div:focus-within{
+ main .input .input-box .box:focus ~ main .input  div:focus-within{
     /* border: 1px solid black; */
     box-shadow: none;
 }
 
  main .input .search-icon {
-     width: 39px;
-     height: 35px;
+     width: 50px;
+     height: 38px;
      margin: 0;
      background-color: #365e91;
      float: right;
@@ -179,18 +202,278 @@ main .input {
  }
 
  main .input .search-icon img {
-     margin: 10px;
-     width: 15px;
-     height: 15px;
+     margin: 8px 12px;
+     width: 25px;
+     height: 25px;
  }
 
  main .input img:hover {
      cursor: pointer;
  }
+
+ main .line-lateral {
+    width: 470px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 97%;
+    left: 28%;
+    z-index: -1;
+}
+main .hr {
+    display: inline-block;
+    width: 80px;
+    height: 0px;
+    margin: 10px 0;
+    margin-left: 0;
+    background-color: #adb3ba;
+    border: 1px solid #acb3ba;
+}
+
+main .line-lateral .line-left {
+    align-self: flex-start;
+    margin-left: 5px;
+}
+
+main .line-lateral .line-right {
+   align-self: flex-end;
+}
  
- .letter-v {
-     width: 5px;
-     height: 2px;
-     font-size: 10px;
-     font-family: monospace;
+ main .button {
+     width: 270px;
+     height: 30px;
+     margin: 15px auto 0;
+     display: flex;
+     background-color: #f8f9fa;
+     border: 1px solid #acb3ba;
+     color: #365e91;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
  }
+
+ main .button .logo-language {
+     width: 25px;
+     height: 26px;
+     display: flex;
+     padding-top: 3%;
+ }
+
+ main .button .logo-language p{
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    margin-top: -5px;
+    margin-right: 5%;
+    padding-left: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: -2px;
+    color: rgb(51, 102, 204);
+}
+
+main .button .logo-language p sup{
+    display: inline-block;
+    font-size: 11px;
+    color: rgb(51, 102, 204);
+    font-weight: 500;
+}
+
+main .button .button--language {
+     display: inline-block;
+     appearance: none;
+     width: 210px;
+     height: 30px;
+     border: 0;
+     color: rgb(51, 102, 204);
+     background-color: #f8f9fa;
+     font-size: 14px;
+     font-weight: 500;
+ }
+
+  main .button .arrow {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-left: 2px solid #6e92e5;
+    border-bottom: 2px solid #6e92e5;
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-right: 4px;
+    rotate: -45deg;
+    cursor: pointer;
+    }
+
+main .button:hover, main .button .button--language:hover {
+        cursor: pointer;
+        background: #fff;   
+    }
+
+main .button:focus-within {
+        border: 2px solid #5a709a;
+}
+
+main .button .button--language optgroup:focus{ 
+    display: none;
+}
+main .box-hide {
+    width: 80%;
+    height: 50rem;
+    display: none;
+}
+main .box-hide .arrow {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-left: 2px solid #6e92e5;
+    border-bottom: 2px solid #6e92e5;
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-right: 4px;
+    rotate: -45deg;
+    }
+main .box-hide:focus ~ .main .box-hide .arrow{
+    transform: rotate(0,5turn);
+}
+
+main .separador {
+    position: absolute;
+    display: block;
+    width: 98%;
+    height: 0px;
+    left: 1%;
+    margin: 3% auto 0;
+    border: 0.5px solid #adb3ba;    
+}
+.footer {
+    width: 85%;
+    height: 310px;
+    margin: 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    font-size: 11.375px;
+    font-weight: 300;
+    
+
+}
+.footer .icon {
+    width: 40px;
+    height: 40px;
+}
+
+.side-left {
+    width: 342px;
+    max-width: 600px;
+    /* height: 60px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    padding-left: 10px;
+    /* flex-grow: 1; */
+}
+.footer .container__description{
+    margin-bottom: 60px;
+    height: 60px;
+    }
+    
+.footer .container__description p {
+    margin-top: -5px;
+    width: 280px;
+    height: 50px;
+    line-height: 18px;
+}
+.footer .container__description a {
+    display: block;
+    text-decoration: none;
+    color:rgb(51, 102, 204)
+}
+.footer .container__description a:hover {
+    text-decoration: underline;
+}
+.footer .container__download{
+    background-color: #faf9fa;
+    height: 120px;
+    /* width: 370px; */
+    padding-top: 10px;
+}
+.footer .container__download p {
+    margin-top: -5px;
+    width: 280px;
+    height: 50px;
+    line-height: 18px;
+
+}
+.footer .container__download a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: rgb(51, 102, 204);
+}
+.footer .container__download a:hover {
+    text-decoration: underline;
+}
+.footer .container__other-projects {
+    flex-grow: 2;
+    width: 73%;
+}
+footer .container__other-projects ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .container__other-projects ul li{
+    width: 180px;
+    height: 70px;
+    list-style: none;
+}
+footer .container__other-projects ul img {
+    width: 40px;
+    height: 40px;
+}
+footer .container__other-projects ul li a{
+    color: #54595d;
+    text-decoration: none;
+    display: block;
+    width: 120px;
+}
+footer .container__other-projects ul li a span {
+    color: rgb(51, 102, 204);
+    font-weight: 300;
+    display: block;
+    margin-bottom: 5px;
+    font-size:13px;
+}
+footer hr{
+    width: 99%;
+    border: 0.5px solid #acb3ba;
+    align-self: center;
+}
+footer p{
+    font-size: 11.2px;
+    width: 640px;
+    margin: 0 auto;
+    color: #54595d;
+}
+footer p a {
+    text-decoration: none;
+    color: rgb(51, 102, 204);
+    margin-left: 3px;
+    margin-right: 5px;
+    list-style-type: disc;
+}
+footer p a:hover{
+    text-decoration: underline;
+}
+footer p .dot::after{
+    list-style:circle;
+    content:"·";
+    margin-left: 5px;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: -3px;
+    font-weight: 500;
+    } 
